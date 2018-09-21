@@ -82,9 +82,27 @@ $ git push origin master
 
 
 ## Command (in detail)
-__git init__
+__git init__    
+로컬 컴퓨터에 있는 디렉토리를 git 디렉토리로 변환합니다. (정확히, 디렉토리 안에 
+git 관련 파일들을 생성하고 git 이 디렉토리를 추적할 수 있게합니다.)
+```bash
+$ mkdir mydir
+$ cd mydir
+$ git init
+```
 
-__git config__
+__git config__    
+`.git/config` 파일에 있는 설정들을 수정하거나 새로운 속성을 추가합니다. 디렉토리마다 
+설정할 수 있으며 또는 `--global` 옵션을 사용하여 일반적인 설정으로 정의할 수 있습니다. 
+주로 아래와 같은 예로 많이 사용됩니다.
+```bash
+# git 관련 ediotr 를 vi 로 설정 
+$ git config --global editor vi
+
+# commit log 를 남길 user 설정
+$ git config user.name "Morty Smith"
+$ git config user.email "mortys@rickandmorty.com"
+```
 
 __git clone__    
 `ssh` 혹은 `http(s)` 로 된 git repo 를 로컬 컴퓨터로 가져옵니다.
@@ -94,22 +112,88 @@ or
 $ git clone ssh://something@something:something.git
 ```
 
-__git add__
+__git add__    
+디렉토리/파일 들을 stage area 에 등록합니다.
 
-__git commit__
+```bash
+# 일반적인 경우
+$ git add something.c
 
-__git status__
+# 파일 내용을 확인하면서 stage 하고 싶은 경우
+$ git add -p something.c # 새로운 파일은 사용하지 못 함
+```
 
-__git log__
+__git commit__    
+staged filed 들을 commit 합니다.
+```bash
+$ git commit
+$ git commit -m "short case"
+```
 
-__git push__
+__git status__    
+git repo 내부 file 들의 변경사항들을 확인합니다.
+```bash
+$ git status
+```
 
-__git pull__
+__git log__    
+Commit log 를 확인합니다.
+```bash
+# Normal
+$ git log
 
-__git branch__
+# Log trace 확인가능
+$ git log --graph
+```
+
+__git push__    
+내 로컬의 commit log 들을 지정된 remote repo 로 보냅니다.
+```bash
+# 원형
+$ git push <remote name> <remote branch name>
+
+# 일반적인 경우
+$ git push origin master
+
+```
+
+__git pull__    
+지정된 remote repo 의 변경내용을 가져옵니다.
+```bash
+# 원형
+$ git pull <remote name> <remote branch name>
+
+# 일반적인 경우
+$ git pull origin master
+```
+
+__git branch__    
+새로운 브랜치를 생성하거나 수정하거나 볼 수 있습니다.
+```bash
+# 새로운 branch 생성
+$ git branch <new branch name>
+
+# 현재 branch 정보 확인
+$ git branch -v
+
+# 해당 branch 삭제
+$ git branch -d <del branch name>
+```
+
+__git retmoe__    
+```bash
+$ git remote -v
+```
+
+
+__git checkout__    
+```bash
+$ git checkout <branch name>
+
+$ git checkout -- something.c
+```
 
 __git rebase(과연 이것까지...)__
-
 
 
 ## GUI
