@@ -71,11 +71,12 @@ VT-d / AMD SVM 이 Off 되어 있을 수 있습니다. [Why does VirtualBox only
 
 
 __Hidden Area__
+
 [Download VirtualBox]:https://www.virtualbox.org/wiki/Downloads
 [Download Ubuntu]:http://releases.ubuntu.com/16.04/
 [Why does VirtualBox only have 32bit?]:https://superuser.com/questions/866962/why-does-virtualbox-only-have-32-bit-option-no-64-bit-option-on-windows-7
-[VMware]: https://github.com/jafffy/linux_usage_wiki/edit/master/virtual.md#vmware
-[Download VMware]: https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/14_0
+[VMware]:https://github.com/jafffy/linux_usage_wiki/edit/master/virtual.md#vmware
+[Download VMware]:https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/14_0
 
 
 [install1]:https://github.com/jafffy/linux_usage_wiki/blob/master/image/virtual/ubuntu1.png
