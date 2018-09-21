@@ -75,7 +75,7 @@ __Hidden Area__
 [Download VirtualBox]:https://www.virtualbox.org/wiki/Downloads
 [Download Ubuntu]:http://releases.ubuntu.com/16.04/
 [Why does VirtualBox only have 32bit?]:https://superuser.com/questions/866962/why-does-virtualbox-only-have-32-bit-option-no-64-bit-option-on-windows-7
-[VMware]:https://github.com/jafffy/linux_usage_wiki/edit/master/virtual.md#vmware
+[VMware]:https://github.com/jafffy/linux_usage_wiki/blob/master/virtual.md#vmware
 [Download VMware]:https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/14_0
 
 
